@@ -39,11 +39,12 @@
 ```bash
 git clone https://github.com/your-username/shophub.git
 cd shophub
+```
 
 ### 2. Install dependencies
 ```bash
 npm install
-
+```
 ### 3. Run the development server
 ```bash
 npm run dev
