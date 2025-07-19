@@ -2,51 +2,44 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { products } from "../data/products.js";
 import Card from "../components/Card";
+import Footer from "../components/Footer.jsx";
 
 const product4 = [
   {
     id: 1,
     title: "Premium Wireless Headphones",
-    price: 299.99,
-    image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
-    description:
-      "High-quality wireless headphones with noise cancellation and premium sound quality. Perfect for music lovers and professionals.",
+    price: 15000,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    description: "High-quality wireless headphones with noise cancellation and premium sound quality. Perfect for music lovers and professionals.",
     category: "Electronics",
-    featured: true,
+    featured: true
   },
   {
     id: 2,
     title: "Smart Fitness Watch",
-    price: 249.99,
-    image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop",
-    description:
-      "Advanced fitness tracking with heart rate monitoring, GPS, and waterproof design. Track your workouts and health metrics.",
+    price: 4000,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop",
+    description: "Advanced fitness tracking with heart rate monitoring, GPS, and waterproof design. Track your workouts and health metrics.",
     category: "Electronics",
-    featured: true,
+    featured: true
   },
   {
     id: 3,
     title: "Professional Camera",
-    price: 899.99,
-    image:
-      "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=500&h=500&fit=crop",
-    description:
-      "Professional-grade camera with 4K video recording and advanced image stabilization. Perfect for photographers and content creators.",
+    price: 55000,
+    image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=500&h=500&fit=crop",
+    description: "Professional-grade camera with 4K video recording and advanced image stabilization. Perfect for photographers and content creators.",
     category: "Electronics",
-    featured: true,
+    featured: true
   },
   {
     id: 4,
     title: "Ergonomic Office Chair",
-    price: 399.99,
-    image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop",
-    description:
-      "Comfortable ergonomic office chair with lumbar support and adjustable height. Perfect for long working hours.",
+    price: 12000,
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop",
+    description: "Comfortable ergonomic office chair with lumbar support and adjustable height. Perfect for long working hours.",
     category: "Furniture",
-    featured: true,
+    featured: true
   },
 ];
 
@@ -93,7 +86,7 @@ function ProductPage() {
         />
         <div>
           <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
-          <p className="text-lg text-gray-700 mb-2">${product.price}</p>
+          <p className="text-lg text-gray-700 mb-2">₹{product.price}</p>
           <p className="text-gray-600">{product.description}</p>
           <button
             className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
@@ -129,7 +122,9 @@ function ProductPage() {
         <p className="text-lg text-gray-700 mb-2">${product.price}</p>
         <p className="text-gray-600">{product.description}</p>
       </div> */}
+      <Footer />
     </div>
+
   );
 }
 

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import { products } from "../data/products.js";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer.jsx";
 
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -102,8 +103,10 @@ function Cart() {
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 }
+
 
 export default Cart;

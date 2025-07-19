@@ -13,7 +13,7 @@ function Card(props) {
               alt="Product 1"
             />
             <h3 className="text-xl font-semibold mb-2">{props.name}</h3>
-            <p className="text-gray-600 mb-4">$ {props.price}</p>
+            <p className="text-gray-600 mb-4">₹{props.price}</p>
             {/* <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600  mb-6">
               Add to Cart
             </button> */}

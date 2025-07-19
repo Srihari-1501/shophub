@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { products } from "../data/products";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer.jsx";
 
 function Checkout() {
   const [cartItems, setCartItems] = useState([]);
@@ -112,6 +113,7 @@ function Checkout() {
           </>
         )}
       </div>
+      <Footer />
     </>
   );
 }

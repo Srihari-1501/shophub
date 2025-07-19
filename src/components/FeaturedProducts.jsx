@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     title: "Premium Wireless Headphones",
-    price: 299.99,
+    price: 15000,
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
     description: "High-quality wireless headphones with noise cancellation and premium sound quality. Perfect for music lovers and professionals.",
     category: "Electronics",
@@ -14,7 +14,7 @@ const products = [
   {
     id: 2,
     title: "Smart Fitness Watch",
-    price: 249.99,
+    price: 4000,
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop",
     description: "Advanced fitness tracking with heart rate monitoring, GPS, and waterproof design. Track your workouts and health metrics.",
     category: "Electronics",
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     title: "Professional Camera",
-    price: 899.99,
+    price: 55000,
     image: "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=500&h=500&fit=crop",
     description: "Professional-grade camera with 4K video recording and advanced image stabilization. Perfect for photographers and content creators.",
     category: "Electronics",
@@ -32,19 +32,19 @@ const products = [
   {
     id: 4,
     title: "Ergonomic Office Chair",
-    price: 399.99,
+    price: 12000,
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop",
     description: "Comfortable ergonomic office chair with lumbar support and adjustable height. Perfect for long working hours.",
     category: "Furniture",
     featured: true
-  }
+  },
 ];
 
 
 function FeaturedProducts() {
   return (
     <div className="text-center p-8 bg-white">
-      <div className="mx-auto w-7xl">
+      <div className="mx-auto">
         <h2 className="text-black text-5xl font-bold mb-4">
           Featured Products
         </h2>
@@ -52,7 +52,7 @@ function FeaturedProducts() {
           Check out our handpicked selection of amazing products
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {/* Example product cards */}
+
           
           {products.map((product) => (
             <Card key={product.id} name={product.title} price={product.price} image={product.image} number={product.id} />    
